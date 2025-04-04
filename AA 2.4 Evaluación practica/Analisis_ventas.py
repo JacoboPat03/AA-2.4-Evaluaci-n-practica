@@ -1,6 +1,5 @@
 from functools import reduce
 
-# Tipo de cambio abril 2025
 TIPO_CAMBIO = 20.46
 
 def analizar_ventas(ventas_mxn):
