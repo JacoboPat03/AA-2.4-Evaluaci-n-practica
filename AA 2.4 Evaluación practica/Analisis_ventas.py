@@ -19,14 +19,14 @@ def analizar_ventas(ventas_mxn):
 ventas_ejemplo = [1500, 2500, 3200, 4500, 6000, 1200, 8000]
 resultados = analizar_ventas(ventas_ejemplo)
 
-print("\na. Promedio de ventas en pesos mexicanos:")
-print(f"   → {resultados['promedio_mxn']:.2f}")
+print("\n Promedio de ventas en pesos mexicanos:")
+print(f"   {resultados['promedio_mxn']:.2f}")
 
-print("\nb. Ventas de la semana en dólares:")
-print("   → " + "\n   → ".join(map(lambda v: f"{v:.2f}", resultados['ventas_usd'])))
+print("\n Ventas de la semana en dólares:")
+print("  " + "\n   ".join(map(lambda v: f"{v:.2f}", resultados['ventas_usd'])))
 
 print("\nc. Ventas en dólares mayores a 150:")
-print("   → " + "\n   → ".join(map(lambda v: f"{v:.2f}", resultados['ventas_mayores_150'])))
+print("   " + "\n   ".join(map(lambda v: f"{v:.2f}", resultados['ventas_mayores_150'])))
 
 print("\nd. Suma total de las ventas mayores a 150 USD:")
-print(f"   → {resultados['total_mayores_150']:.2f}")
+print(f"  {resultados['total_mayores_150']:.2f}")
